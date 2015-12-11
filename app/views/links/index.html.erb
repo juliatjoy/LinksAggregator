@@ -4,7 +4,7 @@
   <tbody>
     <% @links.each do |link| %>
       <tr>
-        <td><%= link_to link.title, link.url %></td>
+        <td><%= link_to link.title, link.url, target:'_blank' %></td>
         <td><%= link.count %></td>
         <td><%= link.username %></td>
         <td><%= link_to 'Show', link %></td>
