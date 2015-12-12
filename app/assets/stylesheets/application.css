@@ -20,10 +20,16 @@ body{
 
  table#head a:link{
  	text-decoration: none;
-
  }
+
+table#head{
+	background-color:  #008000;
+	width: 100%;
+}
+
 table#link{
-	margin-top: 25px;
+	width: 100%;
+	background-color:  #d9d9d9;
 }
 
 table#link a:link{
