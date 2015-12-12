@@ -1,13 +1,21 @@
+
+<body>
 <p id="notice"><%= notice %></p>
 
-<table>
+<table id="head">
+  <thead>
   <tr>
     <td><b>Link Aggregator</b></td>
     <td><%= link_to 'New Link', new_link_path %></td>
   </tr>
+</thead>
+</table>
+
+<table id="link">
   <tbody>
-    <% @links.each do |link| %>
+    <% @links.each_with_index do |link,i| %>
       <tr>
+        <td><%= i+1 %>.</td>
         <td><%= link_to link.title, link.url, target:'_blank' %></td>
         <td><%= link.count %></td>
         <td><%= link.username %></td>
@@ -20,5 +28,5 @@
 </table>
 
 <br>
-
+</body>
 
