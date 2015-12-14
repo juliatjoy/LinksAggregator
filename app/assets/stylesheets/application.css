@@ -36,3 +36,7 @@ table#link{
 table#link a:link{
 	text-decoration: none;
 }
+
+table#link h3{
+	display: inline-block;
+}

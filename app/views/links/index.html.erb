@@ -17,9 +17,9 @@
     <% @links.each_with_index do |link,i| %>
       <tr>
         <td><%= i+1 %>.
-        <%= link_to link.title, link.url, target:'_blank' %>
+        <b><%= link_to link.title, link.url, target:'_blank' %></b>
         <%= link.count %>
-        <%= link.username %>
+        <%= link.username %> 
         </td>
       </tr>
     <% end %>
