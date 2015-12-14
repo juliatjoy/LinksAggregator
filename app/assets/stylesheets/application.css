@@ -20,6 +20,7 @@ body{
 
  table#head a:link{
  	text-decoration: none;
+ 	color: black;
  }
 
 table#head{

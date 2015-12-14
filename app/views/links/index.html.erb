@@ -15,13 +15,13 @@
   <tbody>
     <% @links.each_with_index do |link,i| %>
       <tr>
-        <td><%= i+1 %>.</td>
-        <td><%= link_to link.title, link.url, target:'_blank' %></td>
-        <td><%= link.count %></td>
-        <td><%= link.username %></td>
-        <td><%= link_to 'Show', link %></td>
-        <td><%= link_to 'Edit', edit_link_path(link) %></td>
-        <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= i+1 %>.
+        <%= link_to link.title, link.url, target:'_blank' %>
+        <%= link.count %>
+        <%= link.username %>
+        <%= link_to 'Show', link %>
+        <%= link_to 'Edit', edit_link_path(link) %>
+        <%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
