@@ -12,6 +12,7 @@ class LinksController < ApplicationController
   def show
     count = @link.count.to_i + 1
     @link.update_attribute(:count,count)
+    redirect_to @link.url
   end
 
   # GET /links/new
