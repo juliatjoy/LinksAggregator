@@ -10,6 +10,8 @@ class LinksController < ApplicationController
   # GET /links/1
   # GET /links/1.json
   def show
+    count = @link.count.to_i + 1
+    @link.update_attribute(:count,count)
   end
 
   # GET /links/new
