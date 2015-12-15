@@ -1,3 +1,4 @@
+<% require 'uri' %>
 
 <body>
 <p id="notice"><%= notice %></p>
@@ -20,6 +21,7 @@
         <b><%= link_to link.title, link.url, target:'_blank' %></b>
         <%= link.count %>
         <%= link.username %> 
+        (<%= URI.parse(link.url).host %>)
         </td>
       </tr>
     <% end %>
